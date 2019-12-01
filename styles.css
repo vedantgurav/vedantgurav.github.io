@@ -1,0 +1,179 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .inner {
+  position: relative;
+    
+  }
+  .outer {
+    border-bottom: solid white 2px;
+    overflow: hidden;
+  }
+  
+
+  body, html {
+  height: 100%;
+  font-weight: normal;
+  font-family: 'PT', sans-serif;
+  color: white;
+  /* background-color: #f0f0ee; */
+  margin: 0px;
+  padding: 0;
+}
+
+/* #placeholder1 {
+  height: 100vh;
+  background-color: grey;
+} */
+
+#pinMaster {
+    /* background-color: #000000; */
+}
+
+#pinContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+section, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.panel {
+  /* height: 100%; */
+  /* width: 100%; */
+  position: absolute;
+}
+
+#pinMaster {
+  position: relative;
+}
+
+.mainpage p {
+    /* position: absolute; */
+    text-align: center;
+}
+
+#nameCont {
+    
+}
+
+.mainpage p#name {
+    font-size: 6vh;
+    background: url("./bg1.png");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(to right, rgb(26, 221, 0), rgb(1, 125, 173)); */
+}
+
+.mainpage p#subhead {
+    font-size: 4vh;
+    background: url("./bg1.png");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mainpage #desc {
+    font-size: 2vh;
+    /* opacity: 0; */
+}
+
+#pinContainer div {
+}
+
+.naver {
+    /* background-color: rgba(0,0,0); */
+    /* -webkit-backdrop-filter: brightness(1.5); */
+    color: white;
+    border-radius: 3vh;
+    position: fixed;
+    width: 20%;
+    height: 90%;
+    top: 5%;
+    left: 5vh;
+    z-index: 3;
+    box-shadow: 10pxpx, 10px, 10px, 10px #000000;
+}
+
+.naver div  {
+    height: 8%;
+    font-size: 1.5vh;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    right: 15vh;
+    top: 0;
+    height: 100vh;
+    width: 60vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pinit {
+    justify-self: none;
+}
+
+.project .ptitle {
+    font-size: 4vh;
+}
+
+.project .pbody {
+    font-size: 1.5vh;
+    padding: 2% 10%;
+}
+
+.imginit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imginit div {
+    margin: 1%;
+    background: none !important;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.imginit img {
+    /* height: 100%; */
+    width: 100%;
+    /* visibility: hidde n; */
+}
