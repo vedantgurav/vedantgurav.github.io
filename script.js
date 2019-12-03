@@ -1,3 +1,5 @@
+// #0B8A6F, #054F3F
+
 var tlintro = new TimelineMax();
 tlintro
 .fromTo(".mainpage p#name",
@@ -123,12 +125,12 @@ to(
 ).to(
   "#pinContainer",
   1,
-  {background: "linear-gradient(to right bottom, #0B8A6F, #054F31)"},
+  {background: "linear-gradient(to right bottom, #000, #140000)"},
   "-=2"
 ).to(
   ".naver",
   1,
-  {background: "linear-gradient(to right bottom, #00C1CD, #006166)"},
+  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},
   "-=2"
 ).to(
   ".naver",
@@ -166,6 +168,64 @@ to(
   1,
   {opacity: 0, scale: "0.7"},
   "+=1"
+)
+
+.from(
+  "#project3 .ptitle",
+  1,
+  {opacity: 0, y: "80%"},
+  "+=1"
+).from(
+  "#project3 .pbody",
+  1,
+  {opacity: 0, y: "20%"},
+  "-=0.6"
+).to(
+  "#pinContainer",
+  1,
+  {background: "linear-gradient(to right bottom, #292C34, #292C34)"},
+  "-=2"
+).to(
+  ".naver",
+  1,
+  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},
+  "-=2"
+).to(
+  ".naver",
+  1,
+  {scale: 0.97},
+  "-=2"
+).to(
+  ".naver",
+  1,
+  {scale: 1},
+  "-=1"
+).to(
+  "#pt1",
+  1,
+  {scale: 1, textShadow: ""},
+  "-=2"
+).to(
+  "#pt2",
+  1,
+  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},
+  "-=1"
+).to(
+  "#project3 .pinit",
+  1,
+  {opacity: 0, scale: "0.7"},
+  "+=1"
+).staggerFrom(
+  "#project3 .imginit div",
+  1,
+  { scale:0.9, opacity:0},
+  0.1,
+  "-=0.5"
+).to(
+  "#project3 .imginit",
+  1,
+  {opacity: 0, scale: "0.7"},
+  "+=1"
 );
 
 new ScrollMagic.Scene({
@@ -175,12 +235,12 @@ new ScrollMagic.Scene({
 })
 .setPin("#pinMaster")
 .setTween(tl2)
-.addIndicators({
-  colorTrigger: "white",
-  colorStart: "white",
-  colorEnd: "white",
-  indent: 40
-})
+// .addIndicators({
+//   colorTrigger: "white",
+//   colorStart: "white",
+//   colorEnd: "white",
+//   indent: 40
+// })
 .addTo(controller);
 
 
@@ -205,6 +265,10 @@ function allCenter($x)  {
         var ty = parseInt(mat[5])+'px';
       else var ty = '0';
       $(this).css("transform","translate("+ts+','+ty+")");
+    });
+    $x.find(".imginit").each( function() {
+      if( parseInt($(this).height()) > parseInt($("#pinContainer").height())*0.95)
+        $(this).css("flex-direction", "row");
     });
   }
 

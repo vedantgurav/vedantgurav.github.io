@@ -6,7 +6,7 @@ body {
     font-family: sans-serif;
     color: white;
   }
-  
+
   section {
     width: 100%;
     height: 100vh;
@@ -18,16 +18,16 @@ body {
     text-transform: uppercase;
     font-weight: 700;
   }
-  
+
   .inner {
   position: relative;
-    
+
   }
   .outer {
     border-bottom: solid white 2px;
     overflow: hidden;
   }
-  
+
 
   body, html {
   height: 100%;
@@ -79,7 +79,7 @@ section, footer {
 }
 
 #nameCont {
-    
+
 }
 
 .mainpage p#name {
@@ -131,8 +131,9 @@ section, footer {
 }
 
 .project {
-    right: 15vh;
-    top: 0;
+    right: 20vw;
+    left: 20vw;
+    top: 5vh;
     height: 100vh;
     width: 60vw;
     position: absolute;
@@ -140,6 +141,13 @@ section, footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+      left: 0;
+      width: 100vw;
+  }
 }
 
 .pinit {
@@ -158,18 +166,16 @@ section, footer {
 .imginit {
     position: absolute;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .imginit div {
     margin: 1%;
-    background: none !important;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
 }
 
 .imginit img {
