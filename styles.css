@@ -85,8 +85,8 @@ section, footer {
     text-align: center;
 }
 
-#nameCont {
-
+.panel {
+  padding: 2% 10%;
 }
 
 .mainpage p#name {
@@ -165,6 +165,8 @@ section, footer {
 
 .project .ptitle {
     font-size: 5vh;
+    padding: 0% 10%;
+    text-align: left;
 }
 
 .project .pbody {
