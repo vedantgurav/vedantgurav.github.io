@@ -41,192 +41,44 @@ var ctrl = new ScrollMagic.Controller();
 var controller = new ScrollMagic.Controller();
 var tl2 = new TimelineMax();
 tl2.
-to(
-  "#nameCont",
-  1,
-  { opacity: 0, y:"-50%"},
-  "-=1"
-)
-.fromTo(
-  "#descCont",
-  1,
-  {opacity: 0, y:"100%"},
-  {opacity: 1, y:"0%"},
-  "-=0.5"
-).to(
-  "#descCont",
-  0.5,
-  {opacity: 0, y:"-100%"}
-).from(
-  ".naver",
-  1,
-  {opacity: 0, top: "10%", left: "10vh", width: "16%" , height: "80%"},
-  "-=0.5"
-).staggerFrom(
-  ".naver p",
-  1,
-  { scale:1.2, opacity:0},
-  0.2,
-  "-=1"
-).from(
-  "#project1 .ptitle",
-  1,
-  {opacity: 0, y: "80%"}
-).from(
-  "#project1 .pbody",
-  1,
-  {opacity: 0, y: "20%"},
-  "-=0.6"
-).fromTo(
-  "#pinContainer",
-  1,
-  {background: "linear-gradient(to right bottom,#000000,#000001)"},
-  {background: "linear-gradient(to right bottom, #002035, #001015)"},
-  "-=4"
-).fromTo(
-  ".naver",
-  1,
-  {background: "linear-gradient(to right bottom,#333,#222)"},
-  {background: "linear-gradient(to right bottom, #004060, #002035)"},
-  "-=4"
-).to(
-  "#pt1",
-  1,
-  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},
-  "-=1"
-).to(
-  "#project1 .pinit",
-  1,
-  {opacity: 0, scale: "0.7"},
-  "+=1"
-).staggerFrom(
-  "#project1 .imginit div",
-  1,
-  { scale: 0.9, opacity:0},
-  0.1,
-  "-=0.5"
-).to(
-  "#project1 .imginit",
-  1,
-  {opacity: 0, scale: "0.7"},
-  "+=1"
-)
+to("#nameCont",1,{ opacity: 0, y:"-50%"},"-=1")
+.fromTo(  "#descCont",  1,  {opacity: 0, y:"100%"},  {opacity: 1, y:"0%"},  "-=0.5")
+.to(  "#descCont",  0.5,  {opacity: 0, y:"-100%"})
+.from(  ".naver",  1,  {opacity: 0, top: "10%", left: "10vh", width: "16%" , height: "80%"},  "-=0.5")
+.staggerFrom(  ".naver p",  1,  { scale:1.2, opacity:0},  0.2,  "-=1")
+.from(  "#project1 .ptitle",  1,  {opacity: 0, y: "80%"})
+.from(  "#project1 .pbody",  1,  {opacity: 0, y: "20%"},  "-=0.6")
+.fromTo(  "#pinContainer",  1,  {background: "linear-gradient(to right bottom,#000000,#000001)"},  {background: "linear-gradient(to right bottom, #002035, #001015)"},  "-=4")
+.fromTo(  ".naver",  1,  {background: "linear-gradient(to right bottom,#333,#222)"},  {background: "linear-gradient(to right bottom, #004060, #002035)"},  "-=4")
+.to(  "#pt1",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
+.to(  "#project1 .pinit",  1,  {opacity: 0, scale: "0.7"},  "+=1")
+.staggerFrom(  "#project1 .imginit div",  1,  { scale: 0.9, opacity:0},  0.1,  "-=0.5")
+.to(  "#project1 .imginit",  1,  {opacity: 0, scale: "0.7"},  "+=1")
 
-.from(
-  "#project2 .ptitle",
-  1,
-  {opacity: 0, y: "80%"},
-  "+=1"
-).from(
-  "#project2 .pbody",
-  1,
-  {opacity: 0, y: "20%"},
-  "-=0.6"
-).to(
-  "#pinContainer",
-  1,
-  {background: "linear-gradient(to right bottom, #000, #140000)"},
-  "-=2"
-).to(
-  ".naver",
-  1,
-  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},
-  "-=2"
-).to(
-  ".naver",
-  1,
-  {scale: 0.97},
-  "-=2"
-).to(
-  ".naver",
-  1,
-  {scale: 1},
-  "-=1"
-).to(
-  "#pt1",
-  1,
-  {scale: 1, textShadow: ""},
-  "-=2"
-).to(
-  "#pt2",
-  1,
-  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},
-  "-=1"
-).to(
-  "#project2 .pinit",
-  1,
-  {opacity: 0, scale: "0.7"},
-  "+=1"
-).staggerFrom(
-  "#project2 .imginit div",
-  1,
-  { scale:0.9, opacity:0},
-  0.1,
-  "-=0.5"
-).to(
-  "#project2 .imginit",
-  1,
-  {opacity: 0, scale: "0.7"},
-  "+=1"
-)
+.from(  "#project2 .ptitle",  1,  {opacity: 0, y: "80%"},  "+=1")
+.from(  "#project2 .pbody",  1,  {opacity: 0, y: "20%"},  "-=0.6")
+.to(  "#pinContainer",  1,  {background: "linear-gradient(to right bottom, #000, #210101)"},  "-=2")
+.to(  ".naver",  1,  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},  "-=2")
+.to(  ".naver",  1,  {scale: 0.97},  "-=2")
+.to(  ".naver",  1,  {scale: 1},  "-=1")
+.to(  "#pt1",  1,  {scale: 1, textShadow: ""},  "-=2")
+.to(  "#pt2",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
+.to(  "#project2 .pinit",  1,  {opacity: 0, scale: "0.7"},  "+=1")
+.staggerFrom(  "#project2 .imginit div",  1,  { scale:0.9, opacity:0},  0.1,  "-=0.5")
+.to(  "#project2 .imginit",  1,  {opacity: 0, scale: "0.7"},  "+=1")
 
-.from(
-  "#project3 .ptitle",
-  1,
-  {opacity: 0, y: "80%"},
-  "+=1"
-).from(
-  "#project3 .pbody",
-  1,
-  {opacity: 0, y: "20%"},
-  "-=0.6"
-).to(
-  "#pinContainer",
-  1,
-  {background: "linear-gradient(to right bottom, #292C34, #292C34)"},
-  "-=2"
-).to(
-  ".naver",
-  1,
-  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},
-  "-=2"
-).to(
-  ".naver",
-  1,
-  {scale: 0.97},
-  "-=2"
-).to(
-  ".naver",
-  1,
-  {scale: 1},
-  "-=1"
-).to(
-  "#pt1",
-  1,
-  {scale: 1, textShadow: ""},
-  "-=2"
-).to(
-  "#pt2",
-  1,
-  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},
-  "-=1"
-).to(
-  "#project3 .pinit",
-  1,
-  {opacity: 0, scale: "0.7"},
-  "+=1"
-).staggerFrom(
-  "#project3 .imginit div",
-  1,
-  { scale:0.9, opacity:0},
-  0.1,
-  "-=0.5"
-).to(
-  "#project3 .imginit",
-  1,
-  {opacity: 0, scale: "0.7"},
-  "+=1"
-);
+
+.from(  "#project3 .ptitle",  1,  {opacity: 0, y: "80%"},  "+=1")
+.from(  "#project3 .pbody",  1,  {opacity: 0, y: "20%"},  "-=0.6")
+.to(  "#pinContainer",  1,  {background: "linear-gradient(to right bottom, #393939, #171717)"},  "-=2")
+.to(  ".naver",  1,  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},  "-=2")
+.to(  ".naver",  1,  {scale: 0.97},  "-=2")
+.to(  ".naver",  1,  {scale: 1},  "-=1")
+.to(  "#pt1",  1,  {scale: 1, textShadow: ""},  "-=2")
+.to(  "#pt2",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
+.to(  "#project3 .pinit",  1,  {opacity: 0, scale: "0.7"},  "+=1")
+.staggerFrom(  "#project3 .imginit div",  1,  { scale:0.9, opacity:0},  0.1,  "-=0.5")
+.to(  "#project3 .imginit",  1,  {opacity: 0, scale: "0.7"},  "+=1");
 
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster",
