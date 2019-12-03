@@ -41,44 +41,44 @@ var ctrl = new ScrollMagic.Controller();
 var controller = new ScrollMagic.Controller();
 var tl2 = new TimelineMax();
 tl2.
-to("#nameCont",16,{ opacity: 0, y:"-5vh"},"+=0")
-.from(  "#descCont",  16,  {opacity: 0, y:"5vh"},  "+=0")
-.to(  "#descCont",  16,  {opacity: 0, y:"-5vh"}, "+=16")
+to("#nameCont",8,{ opacity: 0, y:"-5vh"},"+=0")
+.from(  "#descCont",  8,  {opacity: 0, y:"5vh"},  "+=0")
+.to(  "#descCont",  8,  {opacity: 0, y:"-5vh"}, "+=8")
 // .from(  ".naver",  1,  {opacity: 0, top: "10%", left: "5vh", width: "16%" , height: "80%"},  "-=0.5")
 // .staggerFrom(  ".naver p",  1,  { scale:1.2, opacity:0},  0.2,  "-=1")
-.from(  "#project1 .ptitle",  16,  {opacity: 0, y: "5vh"}, "-=0")
-.staggerFrom(  "#project1 .pbody p", 16,  {opacity: 0, y: "5vh"}, 8, "-=8")
-.fromTo(  "#pinContainer",  16,  {background: "linear-gradient(to right bottom,#000000,#000001)"},  {background: "linear-gradient(to right bottom, #002035, #001015)"},  "-=24")
+.from(  "#project1 .ptitle",  8,  {opacity: 0, y: "5vh"}, "-=0")
+.staggerFrom(  "#project1 .pbody p", 8,  {opacity: 0, y: "5vh"}, 4, "-=4")
+.fromTo(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom,#000000,#000001)"},  {background: "linear-gradient(to right bottom, #002035, #001015)"},  "-=20")
 // .fromTo(  ".naver",  1,  {background: "linear-gradient(to right bottom,#333,#222)"},  {background: "linear-gradient(to right bottom, #004060, #002035)"},  "-=4")
 // .to(  "#pt1",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
-.to(  "#project1 .pinit",  16,  {opacity: 0, scale: 0.7},  "+=16")
-.staggerFrom(  "#project1 .imginit div",  16,  { scale: 0.9, opacity:0},  4,  "-=8")
-.to(  "#project1 .imginit",  16,  {opacity: 0, scale: 0.7}, "+=16")
+.to(  "#project1 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+.staggerFrom(  "#project1 .imginit div",  8,  { scale: 0.9, opacity:0},  2,  "-=4")
+.to(  "#project1 .imginit",  8,  {opacity: 0, scale: 0.7}, "+=8")
 
-.from(  "#project2 .ptitle",  16,  {opacity: 0, y: "5vh"},  "+=8")
-.staggerFrom(  "#project2 .pbody p",  16,  {opacity: 0, y: "5vh"}, 8, "-=8")
-.to(  "#pinContainer",  16,  {background: "linear-gradient(to right bottom, #000, #210101)"},  "-=24")
+.from(  "#project2 .ptitle",  8,  {opacity: 0, y: "5vh"},  "+=4")
+.staggerFrom(  "#project2 .pbody p",  8,  {opacity: 0, y: "5vh"}, 4, "-=4")
+.to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #000, #210101)"},  "-=20")
 // .to(  ".naver",  1,  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},  "-=2")
 // .to(  ".naver",  1,  {scale: 0.97},  "-=2")
 // .to(  ".naver",  1,  {scale: 1},  "-=1")
 // .to(  "#pt1",  1,  {scale: 1, textShadow: ""},  "-=2")
 // .to(  "#pt2",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
-.to(  "#project2 .pinit",  16,  {opacity: 0, scale: 0.7},  "+=16")
-.staggerFrom(  "#project2 .imginit div",  16,  { scale:0.9, opacity:0},  4,  "-=8")
-.to(  "#project2 .imginit",  16,  {opacity: 0, scale: 0.7},  "+=16")
+.to(  "#project2 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+.staggerFrom(  "#project2 .imginit div",  8,  { scale:0.9, opacity:0},  2,  "-=4")
+.to(  "#project2 .imginit",  8,  {opacity: 0, scale: 0.7},  "+=8")
 
 
-.from(  "#project3 .ptitle",  16,  {opacity: 0, y: "5vh"},  "+=8")
-.staggerFrom(  "#project3 .pbody p",  16,  {opacity: 0, y: "5vh"}, 8, "-=8")
-.to(  "#pinContainer",  16,  {background: "linear-gradient(to right bottom, #393939, #171717)"},  "-=24")
-.to(  "#project3 .pinit",  16,  {opacity: 0, scale: 0.7},  "+=16")
-.staggerFrom(  "#project3 .imginit div",  16,  { scale:0.9, opacity:0},  4,  "-=8")
-.to(  "#project3 .imginit",  16,  {opacity: 0, scale: 0.7},  "+=16");
+.from(  "#project3 .ptitle",  8,  {opacity: 0, y: "5vh"},  "+=4")
+.staggerFrom(  "#project3 .pbody p",  8,  {opacity: 0, y: "5vh"}, 4, "-=4")
+.to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #393939, #171717)"},  "-=20")
+.to(  "#project3 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+.staggerFrom(  "#project3 .imginit div",  8,  { scale:0.9, opacity:0},  2,  "-=4")
+.to(  "#project3 .imginit",  8,  {opacity: 0, scale: 0.7},  "+=8");
 
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster",
   triggerHook: "onLeave",
-  duration: "100%"
+  duration: "800%"
 })
 .setPin("#pinMaster")
 .setTween(tl2)
@@ -114,8 +114,14 @@ function allCenter($x)  {
       $(this).css("transform","translate("+ts+','+ty+")");
     });
     $x.find(".imginit").each( function() {
-      if( parseInt($(this).height()) > parseInt($("#pinContainer").height())*0.95)
-        $(this).css("flex-direction", "row");
+      var thish = parseInt($(this).height());
+      var windh = parseInt($("#pinContainer").height())*0.95;
+      if( thish > windh) {
+        if( thish/windh > 1.3 || true)
+          $(this).css("flex-direction", "row");
+        else;
+          // $(this).css("transform","scale("+windh+")");
+      }
     });
   }
 

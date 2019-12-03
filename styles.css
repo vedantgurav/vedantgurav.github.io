@@ -157,10 +157,6 @@ section, footer {
       height 100vh;
       width: 100vw;
   }
-
-  .imginit {
-    width: 94% !important;
-  }
 }
 
 .pinit {
@@ -181,7 +177,7 @@ section, footer {
 
 .imginit {
     position: absolute;
-    width: 100%;
+    width: 80%;
     /* height: 100%; */
     display: flex;
     /* flex-wrap: wrap; */
