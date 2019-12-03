@@ -6,6 +6,9 @@ body {
     font-family: sans-serif;
     color: white;
     user-select: none;
+  }
+
+  img {
     pointer-events: none;
   }
 
