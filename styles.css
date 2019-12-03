@@ -90,7 +90,7 @@ section, footer {
 }
 
 .mainpage p#name {
-    font-size: 6vh;
+    font-size: 9vh;
     background: url("./bg1.png");
     background-size: cover;
     -webkit-background-clip: text;
@@ -99,7 +99,7 @@ section, footer {
 }
 
 .mainpage p#subhead {
-    font-size: 4vh;
+    font-size: 5vh;
     background: url("./bg1.png");
     background-size: cover;
     -webkit-background-clip: text;

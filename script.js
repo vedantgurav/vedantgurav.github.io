@@ -1,17 +1,7 @@
 // #0B8A6F, #054F3F
 
 var tlintro = new TimelineMax();
-tlintro
-.fromTo(".mainpage p#name",
-  1.2,
-  {opacity: 0, y: "100%"},
-  {opacity: 1, y: "0%"},
-).fromTo(".mainpage p#subhead",
-1.1,
-{opacity: 0, y: "100%"},
-{opacity: 1, y: "0%"},
-"-=0.9"
-);
+tlintro.staggerFrom("#nameCont p", 1.2 ,{opacity: 0, y: "100%"}, 0.6, "+0.6");
 
 var ctrl = new ScrollMagic.Controller();
 
@@ -42,8 +32,8 @@ var controller = new ScrollMagic.Controller();
 var tl2 = new TimelineMax();
 tl2.
 to("#nameCont",8,{ opacity: 0, y:"-5vh"},"+=0")
-.from(  "#descCont",  8,  {opacity: 0, y:"5vh"},  "+=0")
-.to(  "#descCont",  8,  {opacity: 0, y:"-5vh"}, "+=8")
+.staggerFrom(  "#descCont p",  8,  {opacity: 0, y:"5vh"}, 4 ,"+=0")
+.staggerTo(  "#descCont p",  8,  {opacity: 0, y:"-5vh"}, 4,"+=8")
 // .from(  ".naver",  1,  {opacity: 0, top: "10%", left: "5vh", width: "16%" , height: "80%"},  "-=0.5")
 // .staggerFrom(  ".naver p",  1,  { scale:1.2, opacity:0},  0.2,  "-=1")
 .from(  "#project1 .ptitle",  8,  {opacity: 0, y: "5vh"}, "-=0")
@@ -78,7 +68,7 @@ to("#nameCont",8,{ opacity: 0, y:"-5vh"},"+=0")
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster",
   triggerHook: "onLeave",
-  duration: "800%"
+  duration: "600%"
 })
 .setPin("#pinMaster")
 .setTween(tl2)
