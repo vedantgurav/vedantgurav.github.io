@@ -173,6 +173,7 @@ section, footer {
 .project .pbody {
     font-size: 1.5vh;
     padding: 2% 10%;
+    text-align: justify;
 }
 
 .imginit {
