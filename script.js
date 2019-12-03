@@ -122,5 +122,6 @@ function allCenter($x)  {
 
     $(window).resize(function() {
       allCenter($(document));
+      document.body.height = window.innerHeight;
     });
   });
