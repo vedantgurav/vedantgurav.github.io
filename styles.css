@@ -159,7 +159,7 @@ section, footer {
   }
 
   .imginit {
-    width: 96%;
+    width: 94% !important;
   }
 }
 
