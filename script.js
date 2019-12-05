@@ -37,7 +37,7 @@ var ctrl = new ScrollMagic.Controller();
 var controller = new ScrollMagic.Controller();
 var tl2 = new TimelineMax();
 tl2.
-to("#nameCont",8,{ opacity: 0, y:"-5vh"},"+=0")
+to("#nameCont",8,{ opacity: 0, y:"-100%"},"+=0")
 .staggerFrom(  "#descCont p",  8,  {opacity: 0, y:"5vh"}, 4 ,"+=0")
 .staggerTo(  "#descCont p",  8,  {opacity: 0, y:"-5vh"}, 4,"+=8")
 // .from(  ".naver",  1,  {opacity: 0, top: "10%", left: "5vh", width: "16%" , height: "80%"},  "-=0.5")
