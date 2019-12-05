@@ -1,7 +1,13 @@
 // #0B8A6F, #054F3F
 
 var tlintro = new TimelineMax();
-tlintro.staggerFrom("#nameCont p", 1.2 ,{opacity: 0, y: "100%"}, 0.6, "+0.6");
+// tlintro.staggerFrom("#nameCont path", 0.5 ,{opacity: 0, scale: 0.9}, 0.05, "+0.6");
+tlintro.staggerTo("#nameCont path", 1 ,{strokeDashoffset: "0px"}, 0.05, "+0.6").from("#nameCont filter",2,{opacity: 0});
+
+const name = document.querySelectorAll("#nameCont path");
+for(let i=0; i<name.length; i++) {
+  console.log(name[i].getTotalLength());
+}
 
 var ctrl = new ScrollMagic.Controller();
 
