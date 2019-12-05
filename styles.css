@@ -204,7 +204,7 @@ section, footer {
   /* stroke: red !important; */
   /* stroke: #6099EF; */
   stroke: white;
-  stroke-width: 1pt;
+  stroke-width: 0.2vh;
 }
 
 #hintCont {

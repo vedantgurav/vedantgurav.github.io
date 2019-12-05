@@ -42,7 +42,7 @@ tl2
 .staggerTo("#nameCont path", 8 ,{strokeDashoffset: "0px"}, 1, "-=2")
 // .staggerTo("#nameCont path", 8 ,{stroke: "red"}, 1, "-=78")
 // .staggerTo("#nameCont path", 8 ,{stroke: "blue"}, 1, "-=156")
-.to("#nameCont",8,{ opacity: 0, y:"-10vh"},"+=0")
+.to("#nameCont",8,{ opacity: 0, y:"-10vh"},"-=0.2")
 .staggerFrom(  "#descCont p",  8,  {opacity: 0, y:"5vh"}, 4 ,"+=0")
 .staggerTo(  "#descCont p",  8,  {opacity: 0, y:"-5vh"}, 4,"+=8")
 // .from(  ".naver",  1,  {opacity: 0, top: "10%", left: "5vh", width: "16%" , height: "80%"},  "-=0.5")
