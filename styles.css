@@ -150,6 +150,10 @@ section, footer {
     align-items: center;
 }
 
+.cent {
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   .project {
       left: 0;
