@@ -2,7 +2,8 @@
 
 var tlintro = new TimelineMax();
 // tlintro.staggerFrom("#nameCont path", 0.5 ,{opacity: 0, scale: 0.9}, 0.05, "+0.6");
-tlintro.staggerTo("#nameCont path", 1 ,{strokeDashoffset: "0px"}, 0.05, "+0.6").from("#nameCont filter",2,{opacity: 0});
+// tlintro.staggerTo("#nameCont path", 1 ,{strokeDashoffset: "0px"}, 0.05, "+0.6");
+tlintro.from("#hintCont", 1, {scale: 0.7});
 
 const name = document.querySelectorAll("#nameCont path");
 for(let i=0; i<name.length; i++) {
@@ -36,8 +37,12 @@ var ctrl = new ScrollMagic.Controller();
 
 var controller = new ScrollMagic.Controller();
 var tl2 = new TimelineMax();
-tl2.
-to("#nameCont",8,{ opacity: 0, y:"-100%"},"+=0")
+tl2
+.to("#hintCont",8,{opacity: 0, y: "-5vh"},"+=0")
+.staggerTo("#nameCont path", 8 ,{strokeDashoffset: "0px"}, 1, "-=2")
+// .staggerTo("#nameCont path", 8 ,{stroke: "red"}, 1, "-=78")
+// .staggerTo("#nameCont path", 8 ,{stroke: "blue"}, 1, "-=156")
+.to("#nameCont",8,{ opacity: 0, y:"-10vh"},"+=0")
 .staggerFrom(  "#descCont p",  8,  {opacity: 0, y:"5vh"}, 4 ,"+=0")
 .staggerTo(  "#descCont p",  8,  {opacity: 0, y:"-5vh"}, 4,"+=8")
 // .from(  ".naver",  1,  {opacity: 0, top: "10%", left: "5vh", width: "16%" , height: "80%"},  "-=0.5")
