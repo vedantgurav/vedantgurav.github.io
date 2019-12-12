@@ -74,7 +74,14 @@ tl2
 .to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #393939, #171717)"},  "-=20")
 .to(  "#project3 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
 .staggerFrom(  "#project3 .imginit div",  8,  { scale:0.9, opacity:0},  2,  "-=4")
-.to(  "#project3 .imginit",  8,  {opacity: 0, scale: 0.7},  "+=8");
+.to(  "#project3 .imginit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+
+.from(  "#project4 .ptitle",  8,  {opacity: 0, y: "5vh"},  "+=4")
+.staggerFrom(  "#project4 .pbody p",  8,  {opacity: 0, y: "5vh"}, 4, "-=4")
+.to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #000, #061D33)"},  "-=20")
+.to(  "#project4 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+.staggerFrom(  "#project4 .imginit div",  8,  { scale:0.9, opacity:0},  2,  "-=4")
+.to(  "#project4 .imginit",  8,  {opacity: 0, scale: 0.7},  "+=8");
 
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster",
