@@ -47,9 +47,21 @@ tl2
 .staggerTo(  "#descCont p",  8,  {opacity: 0, y:"-5vh"}, 4,"+=8")
 // .from(  ".naver",  1,  {opacity: 0, top: "10%", left: "5vh", width: "16%" , height: "80%"},  "-=0.5")
 // .staggerFrom(  ".naver p",  1,  { scale:1.2, opacity:0},  0.2,  "-=1")
+
+
+.from(  "#project0 .ptitle",  8,  {opacity: 0, y: "5vh"}, "-=0")
+.staggerFrom(  "#project0 .pbody p", 8,  {opacity: 0, y: "5vh"}, 4, "-=4")
+.fromTo(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom,#000000,#000001)"},  {background: "linear-gradient(to right bottom, #0F518F, #004227)"},  "-=20")
+// .fromTo(  ".naver",  1,  {background: "linear-gradient(to right bottom,#333,#222)"},  {background: "linear-gradient(to right bottom, #004060, #002035)"},  "-=4")
+// .to(  "#pt1",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
+.to(  "#project0 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+.staggerFrom(  "#project0 .imginit div",  8,  { scale: 0.9, opacity:0},  2,  "-=4")
+.to(  "#project0 .imginit",  8,  {opacity: 0, scale: 0.7}, "+=8")
+
+
 .from(  "#project1 .ptitle",  8,  {opacity: 0, y: "5vh"}, "-=0")
 .staggerFrom(  "#project1 .pbody p", 8,  {opacity: 0, y: "5vh"}, 4, "-=4")
-.fromTo(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom,#000000,#000001)"},  {background: "linear-gradient(to right bottom, #002035, #001015)"},  "-=20")
+.to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #002035, #001015)"},  "-=20")
 // .fromTo(  ".naver",  1,  {background: "linear-gradient(to right bottom,#333,#222)"},  {background: "linear-gradient(to right bottom, #004060, #002035)"},  "-=4")
 // .to(  "#pt1",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
 .to(  "#project1 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
@@ -58,7 +70,7 @@ tl2
 
 .from(  "#project2 .ptitle",  8,  {opacity: 0, y: "5vh"},  "+=4")
 .staggerFrom(  "#project2 .pbody p",  8,  {opacity: 0, y: "5vh"}, 4, "-=4")
-.to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #000, #210101)"},  "-=20")
+.to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #210101, #810101)"},  "-=20")
 // .to(  ".naver",  1,  {background: "linear-gradient(to right bottom, #00CD7A, #006066)"},  "-=2")
 // .to(  ".naver",  1,  {scale: 0.97},  "-=2")
 // .to(  ".naver",  1,  {scale: 1},  "-=1")

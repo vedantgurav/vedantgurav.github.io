@@ -10,8 +10,10 @@ body {
     -webkit-user-select: none;
   }
 
-  img {
+  img:not(.png) {
     pointer-events: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px #00000060;
   }
 
   section {
