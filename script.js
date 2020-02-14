@@ -1,13 +1,57 @@
 // #0B8A6F, #054F3F
+
+$(document).ready(function() {
+  function allCenter($x)  {
+    $x.find(".vcent").each( function () {
+      var ph  = parseFloat($(this).parent().height());
+      var h  = parseFloat($(this).height());
+      var y = (ph-h)/2/h*100;
+      $(this).css('transform','translateY('+parseInt(y)+'%)');
+    });
+    $x.find(".hcent").each( function () {
+      var pw  = parseFloat($(this).parent().width());
+      var w  = parseFloat($(this).width());
+      var x = (pw-w)/2/w*100;
+      var ts = parseInt(x)+'%';
+      var mat = $(this).css("transform").match(/(-?[0-9\.]+)/g);
+      if(mat)
+      var ty = parseInt(mat[5])+'px';
+      else var ty = '0';
+      $(this).css("transform","translate("+ts+','+ty+")");
+    });
+    $x.find(".imginit").each( function() {
+      var thish = parseInt($(this).height());
+      var windh = parseInt($("#pinContainer").height())*0.95;
+      if( thish > windh) {
+        if( thish/windh > 1.3 || true)
+        $(this).css("flex-direction", "row");
+        else;
+        // $(this).css("transform","scale("+windh/thish+")");
+        // $(this).css("height",windh);
+      }
+    });
+  }
+
+  allCenter($(document));
+
+  $(window).resize(function() {
+    allCenter($(document));
+    document.body.height = window.innerHeight;
+  });
+});
+
+
+
 $(window).on("load",function() {
 
-  $(".blocker").css("display","none");
 
   var tlintro = new TimelineMax();
   // tlintro.staggerFrom("#nameCont path", 0.5 ,{opacity: 0, scale: 0.9}, 0.05, "+0.6");
   // tlintro.staggerTo("#nameCont path", 1 ,{strokeDashoffset: "0px"}, 0.05, "+0.6");
-  tlintro.from("#hintCont", 1, {scale: 0.7});
-
+  tlintro.to(".blocker",0.5, {scale: 0.7, opacity: 0}).from("#hintCont", 1, {opacity: 0,scale: 0.7});
+  setTimeout(function() {
+    $(".blocker").css("display","none");
+  },2000);
   const name = document.querySelectorAll("#nameCont path");
   for(let i=0; i<name.length; i++) {
     console.log(name[i].getTotalLength());
@@ -112,48 +156,4 @@ $(window).on("load",function() {
   //   indent: 40
   // })
   .addTo(controller);
-
-
-
-
-
-
-  function allCenter($x)  {
-      $x.find(".vcent").each( function () {
-        var ph  = parseFloat($(this).parent().height());
-        var h  = parseFloat($(this).height());
-        var y = (ph-h)/2/h*100;
-        $(this).css('transform','translateY('+parseInt(y)+'%)');
-      });
-      $x.find(".hcent").each( function () {
-        var pw  = parseFloat($(this).parent().width());
-        var w  = parseFloat($(this).width());
-        var x = (pw-w)/2/w*100;
-        var ts = parseInt(x)+'%';
-        var mat = $(this).css("transform").match(/(-?[0-9\.]+)/g);
-        if(mat)
-          var ty = parseInt(mat[5])+'px';
-        else var ty = '0';
-        $(this).css("transform","translate("+ts+','+ty+")");
-      });
-      $x.find(".imginit").each( function() {
-        var thish = parseInt($(this).height());
-        var windh = parseInt($("#pinContainer").height())*0.95;
-        if( thish > windh) {
-          if( thish/windh > 1.3 || true)
-            $(this).css("flex-direction", "row");
-          else;
-            // $(this).css("transform","scale("+windh+")");
-        }
-      });
-    }
-
-
-
-    allCenter($(document));
-
-    $(window).resize(function() {
-      allCenter($(document));
-      document.body.height = window.innerHeight;
-    });
-  });
+});
