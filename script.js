@@ -1,6 +1,8 @@
 // #0B8A6F, #054F3F
 $(window).on("load",function() {
 
+  $(".blocker").css("display","none");
+
   var tlintro = new TimelineMax();
   // tlintro.staggerFrom("#nameCont path", 0.5 ,{opacity: 0, scale: 0.9}, 0.05, "+0.6");
   // tlintro.staggerTo("#nameCont path", 1 ,{strokeDashoffset: "0px"}, 0.05, "+0.6");
