@@ -44,14 +44,13 @@ $(document).ready(function() {
 
 $(window).on("load",function() {
 
+  $(".blocker").css("display","none");
 
   var tlintro = new TimelineMax();
   // tlintro.staggerFrom("#nameCont path", 0.5 ,{opacity: 0, scale: 0.9}, 0.05, "+0.6");
   // tlintro.staggerTo("#nameCont path", 1 ,{strokeDashoffset: "0px"}, 0.05, "+0.6");
-  tlintro.to(".blocker",0.5, {scale: 0.7, opacity: 0}).from("#hintCont", 1, {opacity: 0,scale: 0.7});
-  setTimeout(function() {
-    $(".blocker").css("display","none");
-  },2000);
+  tlintro.from("#hintCont", 1, {scale: 0.7});
+
   const name = document.querySelectorAll("#nameCont path");
   for(let i=0; i<name.length; i++) {
     console.log(name[i].getTotalLength());
