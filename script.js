@@ -44,7 +44,16 @@ $(document).ready(function() {
 
 $(window).on("load",function() {
 
+  setTimeout(function() {
+  //
+  $("img:not(.png)").each( function(){
+    $(this).css("border-radius",parseInt($("#findme").css("width"))*0.06925);
+  });
+},200);
+
+
   $(".blocker").css("display","none");
+
 
   var tlintro = new TimelineMax();
   // tlintro.staggerFrom("#nameCont path", 0.5 ,{opacity: 0, scale: 0.9}, 0.05, "+0.6");
