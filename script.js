@@ -113,6 +113,14 @@ $(window).on("load",function() {
   .staggerFrom(  "#project0 .imginit div",  8,  { scale: 0.9, opacity:0},  2,  "-=4")
   .to(  "#project0 .imginit",  8,  {opacity: 0, scale: 0.7}, "+=8")
 
+  .from(  "#project5 .ptitle",  8,  {opacity: 0, y: "5vh"}, "-=0")
+  .staggerFrom(  "#project5 .pbody p", 8,  {opacity: 0, y: "5vh"}, 4, "-=4")
+  .to(  "#pinContainer",  8,  {background: "linear-gradient(to right bottom, #BB7700, #BB0000)"},  "-=20")
+  // .fromTo(  ".naver",  1,  {background: "linear-gradient(to right bottom,#333,#222)"},  {background: "linear-gradient(to right bottom, #004060, #002035)"},  "-=4")
+  // .to(  "#pt1",  1,  {scale: 1.2, textShadow: "1px 1px 20px #FFFFFF66"},  "-=1")
+  .to(  "#project5 .pinit",  8,  {opacity: 0, scale: 0.7},  "+=8")
+  .staggerFrom(  "#project5 .imginit div",  8,  { scale: 0.9, opacity:0},  2,  "-=4")
+  .to(  "#project5 .imginit",  8,  {opacity: 0, scale: 0.7}, "+=8")
 
   .from(  "#project1 .ptitle",  8,  {opacity: 0, y: "5vh"}, "-=0")
   .staggerFrom(  "#project1 .pbody p", 8,  {opacity: 0, y: "5vh"}, 4, "-=4")
