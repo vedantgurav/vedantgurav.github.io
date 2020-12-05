@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b8c5fa1.chunk.css",
+    "main.js": "/static/js/main.c552db79.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.c99dd6b8.js",
+    "static/css/2.bc4094cb.chunk.css": "/static/css/2.bc4094cb.chunk.css",
+    "static/js/2.d9393631.chunk.js": "/static/js/2.d9393631.chunk.js",
+    "static/js/3.97205f4d.chunk.js": "/static/js/3.97205f4d.chunk.js",
+    "index.html": "/index.html",
+    "static/js/2.d9393631.chunk.js.LICENSE.txt": "/static/js/2.d9393631.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/Sk-Modernist-Regular.e68f85ab.otf",
+    "static/media/atp1.df31dc3d.jpg": "/static/media/atp1.df31dc3d.jpg",
+    "static/media/atp2.44a1136f.jpg": "/static/media/atp2.44a1136f.jpg",
+    "static/media/atp3.c57de8a6.jpg": "/static/media/atp3.c57de8a6.jpg",
+    "static/media/atp4.fa30321f.jpg": "/static/media/atp4.fa30321f.jpg",
+    "static/media/blind1.63f74bed.jpg": "/static/media/blind1.63f74bed.jpg",
+    "static/media/blind2.2f79d7e8.jpg": "/static/media/blind2.2f79d7e8.jpg",
+    "static/media/csi1.2f9aed9c.jpg": "/static/media/csi1.2f9aed9c.jpg",
+    "static/media/csi2.3a6d7977.jpg": "/static/media/csi2.3a6d7977.jpg",
+    "static/media/csi3.902879de.jpg": "/static/media/csi3.902879de.jpg",
+    "static/media/inv1.70ba87dd.jpg": "/static/media/inv1.70ba87dd.jpg",
+    "static/media/inv2.8f1ff6a8.jpg": "/static/media/inv2.8f1ff6a8.jpg",
+    "static/media/inv3.421a83f6.jpg": "/static/media/inv3.421a83f6.jpg",
+    "static/media/redset1.3ce01bfb.jpg": "/static/media/redset1.3ce01bfb.jpg",
+    "static/media/redset2.b33cc667.jpg": "/static/media/redset2.b33cc667.jpg",
+    "static/media/sih.468f323b.jpg": "/static/media/sih.468f323b.jpg",
+    "static/media/splash1.8f48deff.jpg": "/static/media/splash1.8f48deff.jpg",
+    "static/media/splash2.f79f01d3.jpg": "/static/media/splash2.f79f01d3.jpg",
+    "static/media/splash3.093a242d.jpg": "/static/media/splash3.093a242d.jpg",
+    "static/media/tourtime1.0ed13527.jpg": "/static/media/tourtime1.0ed13527.jpg",
+    "static/media/tourtime2.401b7b56.jpg": "/static/media/tourtime2.401b7b56.jpg",
+    "static/media/tourtime3.065f9593.jpg": "/static/media/tourtime3.065f9593.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c99dd6b8.js",
+    "static/css/2.bc4094cb.chunk.css",
+    "static/js/2.d9393631.chunk.js",
+    "static/css/main.7b8c5fa1.chunk.css",
+    "static/js/main.c552db79.chunk.js"
+  ]
+}
