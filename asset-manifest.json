@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.75c74aeb.chunk.css",
-    "main.js": "/static/js/main.98dd86d0.chunk.js",
+    "main.css": "/static/css/main.b42d393c.chunk.css",
+    "main.js": "/static/js/main.37db9a91.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.c99dd6b8.js",
     "static/css/2.bc4094cb.chunk.css": "/static/css/2.bc4094cb.chunk.css",
     "static/js/2.d9393631.chunk.js": "/static/js/2.d9393631.chunk.js",
@@ -21,6 +21,9 @@
     "static/media/inv1.70ba87dd.jpg": "/static/media/inv1.70ba87dd.jpg",
     "static/media/inv2.8f1ff6a8.jpg": "/static/media/inv2.8f1ff6a8.jpg",
     "static/media/inv3.421a83f6.jpg": "/static/media/inv3.421a83f6.jpg",
+    "static/media/mfs1.950a5958.jpg": "/static/media/mfs1.950a5958.jpg",
+    "static/media/mfs2.0ac5bff6.jpg": "/static/media/mfs2.0ac5bff6.jpg",
+    "static/media/mfs3.b958a291.jpg": "/static/media/mfs3.b958a291.jpg",
     "static/media/redset1.3ce01bfb.jpg": "/static/media/redset1.3ce01bfb.jpg",
     "static/media/redset2.b33cc667.jpg": "/static/media/redset2.b33cc667.jpg",
     "static/media/sih.468f323b.jpg": "/static/media/sih.468f323b.jpg",
@@ -35,7 +38,7 @@
     "static/js/runtime-main.c99dd6b8.js",
     "static/css/2.bc4094cb.chunk.css",
     "static/js/2.d9393631.chunk.js",
-    "static/css/main.75c74aeb.chunk.css",
-    "static/js/main.98dd86d0.chunk.js"
+    "static/css/main.b42d393c.chunk.css",
+    "static/js/main.37db9a91.chunk.js"
   ]
 }
